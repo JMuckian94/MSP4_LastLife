@@ -1,8 +1,8 @@
-<h1 align="center">Code Institute Website</h1>
+<h1 align="center">LastLife Website</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.]()
 
-This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
+This is a website for LastLife, a second hand video game and electronics store, where users can come to find classic games and equipment that might not be available anywhere else!
 
 <h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
 
@@ -10,22 +10,31 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 -   ### User stories
 
-    -   #### First Time Visitor Goals
+    -   #### Viewing and Navigation
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+        1. As a Shopper, I want to easily understand the main purpose of the site and learn more about the business.
+        2. As a Shopper, I want to be able to view a list of products and select some to purchase.
+        3. As a Shopper, I want to view individual product details so I can identify the appearance, condition, price, description and location.
+        4. As a Shopper, I want to quickly identify deals, clearance items and special offers so I can take advantage of special savings on items I'd like to purchase.
+        5. As a Shopper, I want to easily view the total of my purchases at any time so I can svoid spending too much or make a mispurchase.
 
-    -   #### Returning Visitor Goals
+    -   #### Registration and User Accounts
 
-        1. As a Returning Visitor, I want to find information about coding challenges.
-        2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find community links.
+        1. As a Site User, I want to register for an account so I can have a personal account and be able to view my user profile.
+        2. As a Site User, I want to login or logout so I can access my personal account information.
+        3. As a Site User, I want an option to recover password in case I forget it so I can regain access to my account.
+        4. As a Site User, I want to recieve an email confirmation after registering so I can verify that my account registration was successful
+        5. As a Site User, I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my payment information.
 
-    -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-        2. As a Frequent User, I want to check to see if there are any new blog posts.
-        3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
+    -   #### Sorting and Searching
+
+        1. As a Shopper, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items available.
+        2. As a Shopper, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
+        3. As a Shopper, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as "genres" or "accessories".
+        4. As a Shopper, I want to search a product by name or description so I can find a specific product I would like to purchase.
+        5. As a Shopper, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available or not.
+
+    -   #### Purchasing and Checkout
 
 -   ### Design
     -   #### Colour Scheme
