@@ -2,7 +2,7 @@
 
 [View the live project here.]()
 
-This is a website for LastLife, a second hand video game and electronics store, where users can come to find classic games and equipment that might not be available anywhere else!
+This is a website for LastLife, a second hand video game and electronics store, where users can come to find classic games and equipment that might not be available anywhere else.
 
 <h2 align="center"><img src=""></h2>
 
@@ -54,17 +54,17 @@ This is a website for LastLife, a second hand video game and electronics store, 
     -   #### Colour Scheme
         -   For this site I have chosen to use a complimantary colour scheme using white and black as the base colors with high contrasting colors, like red and green shades, to draw the users attention to certain actions or events such as clearance sales or new items.
     -   #### Typography
-        -   The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+        -   The primary font is Open Sans, a very popular font used by millions of sites, due to its elegant look and its legibillity. San serif will load in its place if there is problems with the browser loading the primary font.
     -   #### Imagery
-        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+        -   Imagery will be used for two roles on the website. The first set are for decorating the pages, particularly the landing page. These images are relevant to the websites purpose so new users can quickly identify who and what our company is. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
+    -   Mobile Wireframes - [View]()
 
-    -   Mobile Wireframe - [View](https://github.com/)
+    -   Tablet Wireframes - [View]()
 
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+    -   Desktop Wireframes - [View]()
 
 ## Features
 
@@ -109,24 +109,166 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Testing User Stories from User Experience (UX) Section
 
--   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+-   #### Viewing and Navigation
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+    1. As a Shopper, I want to easily understand the main purpose of the site and learn more about the business.
 
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+        1. 
+        2. 
+        3. 
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
+    2. As a Shopper, I want to be able to view a list of products and select some to purchase.
 
-    3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+        1. 
+        2. 
+        3. 
+
+    3. As a Shopper, I want to view individual product details so I can identify the appearance, condition, price, description and location.
+
+        1. 
+        2. 
+        3. 
+    
+    4. As a Shopper, I want to quickly identify deals, clearance items and special offers so I can take advantage of special savings on items I'd like to purchase.
+
+        1. .
+        2. ...
+        3. ...
+    
+    5. As a Shopper, I want to easily view the total of my purchases at any time so I can svoid spending too much or make a mispurchase.
+
+        1. .
+        2. ...
+        3. ...
+
+-   #### Registration and User Accounts
+    
+    1. As a Site User, I want to login or logout so I can access my personal account information.
+
+        1. .
+        2. ...
+        3. ...
+    
+    2. As a Site User, I want to login or logout so I can access my personal account information.
+
+        1. .
+        2. ...
+        3. ...
+    
+    3. As a Site User, I want an option to recover password in case I forget it so I can regain access to my account.
+
+        1. .
+        2. ...
+        3. ...
+    
+    4. As a Site User, I want to recieve an email confirmation after registering so I can verify that my account registration was successful
+
+        1. .
+        2. ...
+        3. ...
+    
+    5. As a Site User, I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my payment information.
+
+        1. .
+        2. ...
+        3. ...
+
+-   #### Sorting and Searching
+
+    1. As a Shopper, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items available.
+
+        1. .
+        2. ...
+        3. ...
+    
+    2. As a Shopper, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that   category by name.
+
+        1. .
+        2. ...
+        3. ...
+    
+    3. As a Shopper, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as       "genres" or "accessories".
+
+        1. .
+        2. ...
+        3. ...
+    
+    4. As a Shopper, I want to search a product by name or description so I can find a specific product I would like to purchase.
+
+        1. .
+        2. ...
+        3. ...
+    
+    5. As a Shopper, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available or not.
+
+        1. .
+        2. ...
+        3. ...
+
+-   #### Purchasing and Checkout
+
+    1. As a Shopper, I want to easily select the quantity of a product, if applicable, so I can ensure I dont accidentally select the wrong product or quantity of products.
+
+        1. .
+        2. ...
+        3. ...
+
+    2. As a Shopper, I want to view the items in my cart to be purchased so I can identify the total cost of my purchase and all items I will recieve.
+
+        1. .
+        2. ...
+        3. ...
+    
+    3. As a Shopper, I want to adjust the quantity of individual items in cart if applicable so I can make changes before checkout.
+
+        1. .
+        2. ...
+        3. ...
+    
+    4. As a Shopper, I want to easily enter my payment information so I can check out quickly with no hassle.
+
+        1. .
+        2. ...
+        3. ...
+    
+    5. As a Shopper, I want to feel my personal information is safe and secure so I can confidently provide the necessary information required to make a purchase.
+
+        1. .
+        2. ...
+        3. ...
+    
+    6. As a Shopper, I want to view an order confirmation before checkout so I can verify that I have not made any mistakes.
+
+        1. .
+        2. ...
+        3. ...
+    
+    7. As a Shopper, I want to recieve an email confirmation after checkout so I can keep the confirmation of what I purchased for personal records.
+
+        1. .
+        2. ...
+        3. ...
+
+-   #### Administration and Store Management
+
+    1. As a Site Administrator, I want to add a product listing so I can add new products to my store.
+
+        1. .
+        2. ...
+        3. ...
+
+    2. As a Site Administrator, I want to edit or update a product listing so I can change product prices, descriptions, images, and other product information.
+
+        1. .
+        2. ...
+        3. ...
+    
+    3. As a Site Administrator, I want to delete a product so I can remove items that are no longer for sale.
+
+        1. .
+        2. ...
+        3. ...
 
 -   #### Returning Visitor Goals
 
