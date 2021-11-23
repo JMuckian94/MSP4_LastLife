@@ -4,7 +4,7 @@
 
 This is a website for LastLife, a second hand video game and electronics store, where users can come to find classic games and equipment that might not be available anywhere else!
 
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+<h2 align="center"><img src=""></h2>
 
 ## User Experience (UX)
 
@@ -29,16 +29,30 @@ This is a website for LastLife, a second hand video game and electronics store, 
     -   #### Sorting and Searching
 
         1. As a Shopper, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items available.
-        2. As a Shopper, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
-        3. As a Shopper, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as "genres" or "accessories".
+        2. As a Shopper, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that   category by name.
+        3. As a Shopper, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as       "genres" or "accessories".
         4. As a Shopper, I want to search a product by name or description so I can find a specific product I would like to purchase.
         5. As a Shopper, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available or not.
 
     -   #### Purchasing and Checkout
 
+        1. As a Shopper, I want to easily select the quantity of a product, if applicable, so I can ensure I dont accidentally select the wrong product or quantity of products.
+        2. As a Shopper, I want to view the items in my cart to be purchased so I can identify the total cost of my purchase and all items I will recieve.
+        3. As a Shopper, I want to adjust the quantity of individual items in cart if applicable so I can make changes before checkout.
+        4. As a Shopper, I want to easily enter my payment information so I can check out quickly with no hassle.
+        5. As a Shopper, I want to feel my personal information is safe and secure so I can confidently provide the necessary information required to make a purchase.
+        6. As a Shopper, I want to view an order confirmation before checkout so I can verify that I have not made any mistakes.
+        7. As a Shopper, I want to recieve an email confirmation after checkout so I can keep the confirmation of what I purchased for personal records.
+
+    -   #### Administration and Store Management
+
+        1. As a Site Administrator, I want to add a product listing so I can add new products to my store.
+        2. As a Site Administrator, I want to edit or update a product listing so I can change product prices, descriptions, images, and other product information.
+        3. As a Site Administrator, I want to delete a product so I can remove items that are no longer for sale.
+
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are Code Insititue red, and white.
+        -   For this site I have chosen to use a complimantary colour scheme using white and black as the base colors with high contrasting colors, like red and green shades, to draw the users attention to certain actions or events such as clearance sales or new items.
     -   #### Typography
         -   The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
     -   #### Imagery
