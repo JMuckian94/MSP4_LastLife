@@ -390,4 +390,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   My Mentor for continuous helpful feedback.
 
+-   Shanika Wickramasinghe's article on [What’s an Example of Good E-Commerce Database Design?](https://resources.fabric.inc/blog/answers/ecommerce-database-design-example)
+
 -   Tutor support at Code Institute for their support.
