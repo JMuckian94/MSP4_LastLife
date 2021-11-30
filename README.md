@@ -60,11 +60,11 @@ This is a website for LastLife, a second hand video game and electronics store, 
 
 *   ### Wireframes
 
-    -   Mobile Wireframes - [View]()
+    -   Mobile Wireframes - [View](https://github.com/JMuckian94/MSP4_LastLife/tree/main/wireframes/mobile)
 
-    -   Tablet Wireframes - [View]()
+    -   Tablet Wireframes - [View](https://github.com/JMuckian94/MSP4_LastLife/tree/main/wireframes/tablet)
 
-    -   Desktop Wireframes - [View]()
+    -   Desktop Wireframes - [View](https://github.com/JMuckian94/MSP4_LastLife/tree/main/wireframes/desktop)
 
 ## Features
 
@@ -76,29 +76,25 @@ This is a website for LastLife, a second hand video game and electronics store, 
 
 ### Languages Used
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [HTML](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+1. [Bootstrap:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+    - Font Awesome Icons was used throughout the website to add icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
     - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
 1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+    - Balsamiq was used to create the [wireframes](https://github.com/JMuckian94/MSP4_LastLife/tree/main/wireframes) during the design process.
 
 ## Testing
 
