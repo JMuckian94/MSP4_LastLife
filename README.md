@@ -58,13 +58,94 @@ This is a website for LastLife, a second hand video game and electronics store, 
     -   #### Imagery
         -   Imagery will be used for two roles on the website. The first set are for decorating the pages, particularly the landing page. These images are relevant to the websites purpose so new users can quickly identify who and what our company is. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
 
-*   ### Wireframes
+-   ### Wireframes
 
     -   Mobile Wireframes - [View](https://github.com/JMuckian94/MSP4_LastLife/tree/main/wireframes/mobile)
 
     -   Tablet Wireframes - [View](https://github.com/JMuckian94/MSP4_LastLife/tree/main/wireframes/tablet)
 
     -   Desktop Wireframes - [View](https://github.com/JMuckian94/MSP4_LastLife/tree/main/wireframes/desktop)
+
+-   ### Database Structure
+
+product_category
+| Name        | Type         |
+|-------------|--------------|
+| id          | INT          |
+| name        | VARCHAR(255) |
+| desc        | TEXT         |
+| created_at  | TIMESTAMP    |
+| modified_at | TIMESTAMP    |
+| deleted_at  | TIMESTAMP    |
+
+product_inventory
+| Name        | Type      |
+|-------------|-----------|
+| id          | INT       |
+| quantity    | INT       |
+| created_at  | TIMESTAMP |
+| modified_aT | TIMESTAMP |
+| deleted_at  | TIMESTAMP |
+
+discount
+| Name             | Type          |
+|------------------|---------------|
+| id               | INT           |
+| name             | VARCHAR(255)  |
+| desc             | TEXT          |
+| discount_percent | DECIMAL(8, 2) |
+| active           | TINYINT(1)    |
+| created_at       | TIMESTAMP     |
+| modified_at      | TIMESTAMP     |
+| deleted_at       | TIMESTAMP     |
+
+product
+| Name         | Type          |
+|--------------|---------------|
+| id           | INT           |
+| name         | VARCHAR(255)  |
+| desc         | TEXT          |
+| SKU          | VARCHAR(255)  |
+| category_id  | INT           |
+| inventory_id | INT           |
+| price        | DECIMAL(8, 2) |
+| discount_id  | INT           |
+| created_at   | TIMESTAMP     |
+| modified_at  | TIMESTAMP     |
+| deleted_at   | TIMESTAMP     |
+
+order_details
+| Name        | Type          |
+|-------------|---------------|
+| id          | INT           |
+| user_id     | VARCHAR(255)  |
+| total       | DECIMAL(8, 2) |
+| payment_id  | INT           |
+| created_at  | TIMESTAMP     |
+| modified_at | TIMESTAMP     |
+
+order_items
+| Name        | Type      |
+|-------------|-----------|
+| id          | INT       |
+| order_id    | INT       |
+| product_id  | INT       |
+| quantity    | INT       |
+| created_at  | TIMESTAMP |
+| modified_at | TIMESTAMP |
+
+user
+| Name         | Type          |
+|--------------|---------------|
+| id           | INT           |
+| username     | VARCHAR(255)  |
+| password     | TEXT          |
+| first_name   | DECIMAL(8, 2) |
+| last_name    | VARCHAR(255)  |
+| telephone    | INT           |
+| created_at   | TIMESTAMP     |
+| modified_at  | TIMESTAMP     |
+
 
 ## Features
 
