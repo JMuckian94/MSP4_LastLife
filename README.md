@@ -146,6 +146,81 @@ user
 | created_at   | TIMESTAMP     |
 | modified_at  | TIMESTAMP     |
 
+shopping_session
+| Name        | Type          |
+|-------------|---------------|
+| id          | INT           |
+| user_id     | VARCHAR(255)  |
+| total       | DECIMAL(8, 2) |
+| created_at  | TIMESTAMP     |
+| modified_at | TIMESTAMP     |
+
+cart_item
+| Name        | Type      |
+|-------------|-----------|
+| id          | INT       |
+| session_id  | INT       |
+| product_id  | INT       |
+| quantity    | INT       |
+| created_at  | TIMESTAMP |
+| modified_at | TIMESTAMP |
+
+payment_details
+| Name        | Type         |
+|-------------|--------------|
+| id          | INT          |
+| order_id    | INT          |
+| amount      | INT          |
+| provider    | VARCHAR(255) |
+| status      | VARCHAR(255) |
+| created_at  | TIMESTAMP    |
+| modified_at | TIMESTAMP    |
+
+user_address
+| Name          | Type         |
+|---------------|--------------|
+| id            | INT          |
+| user_id       | INT          |
+| address_line1 | VARCHAR(255) |
+| address_line2 | VARCHAR(255) |
+| city          | VARCHAR(255) |
+| post_code     | VARCHAR(255) |
+| country       | VARCHAR(255) |
+| telephone     | VARCHAR(255) |
+| mobile        | VARCHAR(255) |
+
+user_payment
+| Name         | Type         |
+|--------------|--------------|
+| id           | INT          |
+| user_id      | INT          |
+| payment_type | VARCHAR(255) |
+| provider     | VARCHAR(255) |
+| account_no   | INT          |
+| expiry       | DATE         |
+
+admin_type
+| Name        | Type         |
+|-------------|--------------|
+| id          | INT          |
+| admin_type  | VARCHAR(255) |
+| permissions | VARCHAR(255) |
+| created_at  | TIMESTAMP    |
+| modified_at | TIMESTAMP    |
+
+adminuser
+| Name        | Type          |
+|-------------|---------------|
+| id          | INT           |
+| username    | VARCHAR(255)  |
+| password    | TEXT          |
+| first_name  | DECIMAL(8, 2) |
+| last_name   | VARCHAR(255)  |
+| type_id     | INT           |
+| last_login  | TIMESTAMP     |
+| created_at  | TIMESTAMP     |
+| modified_at | TIMESTAMP     |
+
 
 ## Features
 
