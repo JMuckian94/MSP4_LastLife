@@ -4,32 +4,53 @@
 
 <h2 align="center"><img src=""></h2>
 
-## Project Objective
+## Project Summary
 
-To create a website for a second hand video game store. This store will sell everything from consoles and accessories to the games themselves and will be equiped with everything to be expected from a modern online store such as account management, payment security and storage, and an intuative shopping cart. The website will be a full stack application, with a relational database, using the Django/Python full stack MVC framework and related contemporary technologies. The data model, application features and business logic will manage, query and manipulate relational data to meet the given needs of this real-world domain. It will present authorisation, authentication and permission features in a full stack web application solution. It will contain an intergrated and custom designed e-commerce payment system, in a cloud-hosted full stack web application. The entire development process will be documented via git version control and the final iterations will be deployed to Heroku and hosted via AWS.
+LastLife is a website for a second hand video game store. This store will sell everything from consoles and accessories to the games themselves and will be equiped with everything to be expected from a modern online store such as account management, payment security and storage, and an intuative shopping cart. The website will be a full stack application, with a relational database, using the Django/Python full stack MVC framework and related contemporary technologies. The data model, application features and business logic will manage, query and manipulate relational data to meet the given needs of this real-world domain. It will present authorisation, authentication and permission features in a full stack web application solution. It will contain an intergrated and custom designed e-commerce payment system, in a cloud-hosted full stack web application. The entire development process will be documented via git version control and the final iterations will be deployed to Heroku and hosted via AWS.
 
-## Website Design Goals
+## Website Design Objectives
 
-#### LO1 Design, develop and implement a full stack web application, with a relational database, using the Django/Python Full Stack MVC framework and related contemporary technologies
+#### DO1 Design, develop and implement a full stack web application, with a relational database, using the Django/Python Full Stack MVC framework and related contemporary technologies
 
 -   (1.1) Design a full stack web application to be built using the Django framework and to incorporate a relational database and multiple apps (an app for each potentially reusable component)
 -   (1.2) Design a front end for a full stack web application that meets accessibility guidelines, follows the principles of UX design, meets its given purpose and provide a set of user interactions
 -   (1.3) Develop and implement a full stack web application built using the Django framework, to incorporate a relational database, an interactive front end and multiple apps (an app for each potentially reusable component)
--   1.4 Implement at least one form, with validation, that allows users to create and edit models in the backend
--   1.5 Build a Django file structure that is consistent and logical, following the Django conventions
--   1.6 Write code that clearly demonstrates characteristics of ‘clean code’
--   1.7 Define application URLs in a consistent manner
--   1.8 Incorporate a main navigation menu and structured layout
--   1.9 Demonstrate proficiency in the Python language by including sufficient custom logic in your project
--   1.10 Write Python code that includes functions with compound statements such as if conditions and/or loops
--   1.11 Design and implement manual, and automated test procedures to assess functionality, usability, responsiveness and data management within the full web application
+-   (1.4) Implement at least one form, with validation, that allows users to create and edit models in the backend
+-   (1.5) Build a Django file structure that is consistent and logical, following the Django conventions
+-   (1.6) Write code that clearly demonstrates characteristics of ‘clean code’
+-   (1.7) Define application URLs in a consistent manner
+-   (1.8) Incorporate a main navigation menu and structured layout
+-   (1.9) Demonstrate proficiency in the Python language by including sufficient custom logic in your project
+-   (1.10) Write Python code that includes functions with compound statements such as if conditions and/or loops
+-   (1.11) Design and implement manual, and automated test procedures to assess functionality, usability, responsiveness and data management within the full web application
 
-#### LO2 Design and implement a relational data model, application features and business logic to manage, query and manipulate relational data to meet given needs in a particular real-world domain
+#### DO2 Design and implement a relational data model, application features and business logic to manage, query and manipulate relational data to meet given needs in a particular real-world domain
 
 -   (2.1) Design a relational database schema with clear relationships between entities
 -   (2.2) Create at least TWO original custom Django models
 -   (2.3) Create at least one form with validation that will allow users to create records in the database (in addition to the authentication mechanism)
 -   (2.4) All CRUD (create, select/read, update, delete) functionality is implemented
+
+
+#### DO3 Identify and apply authorisation, authentication and permission features in a full stack web application solution
+
+-   (3.1) Implement an authentication mechanism, allowing a user to register and log in, addressing a clear reason as to why the users would need to do so
+-   (3.2) Implement login and registration pages that are only available to anonymous users
+-   (3.3) Implement functionality that prevents non-admin users from accessing the data store directly without going through the code
+
+#### DO4 Design, develop and integrate an e-commerce payment system in a cloud-hosted, full stack web application
+
+-   (4.1) Implement at least one Django app containing some e-commerce functionality using an online payment processing system (e.g. Stripe). This may be a shopping cart checkout, subscription-based payments or single payments, donations, etc
+-   (4.2) Implement a feedback system that reports successful and unsuccessful purchases to the user, with a helpful message
+
+#### DO5 Document the development process through a git based version control system and deploy the full application to a cloud hosting platform
+
+-   5.1 Deploy the final version of your code to a hosting platform and test that it matches the development version
+-   5.2 Ensure that all final deployed code is free of commented out code and has no broken internal links
+-   5.3 Ensure the security of the deployed version, making sure to not include any passwords in the git repository, that all secret keys are hidden in environment variables or in files that are in .gitignore, and that DEBUG mode is turned off
+-   5.4 Use a git-based version control system for the full application, generating documentation through regular commits and in the project README
+-   5.5 Create a project README that is well-structured and written using a consistent markdown format
+-   5.6 Document the full deployment procedure, including the database, and the testing procedure, in a README file that also explains the application’s purpose and the value that it provides to its users
 
 ## User Experience (UX)
 
