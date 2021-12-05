@@ -2,9 +2,34 @@
 
 [View the live project here.]()
 
-This is a website for LastLife, a second hand video game and electronics store, where users can come to find classic games and equipment that might not be available anywhere else.
-
 <h2 align="center"><img src=""></h2>
+
+## Project Objective
+
+To create a website for a second hand video game store. This store will sell everything from consoles and accessories to the games themselves and will be equiped with everything to be expected from a modern online store such as account management, payment security and storage, and an intuative shopping cart. The website will be a full stack application, with a relational database, using the Django/Python full stack MVC framework and related contemporary technologies. The data model, application features and business logic will manage, query and manipulate relational data to meet the given needs of this real-world domain. It will present authorisation, authentication and permission features in a full stack web application solution. It will contain an intergrated and custom designed e-commerce payment system, in a cloud-hosted full stack web application. The entire development process will be documented via git version control and the final iterations will be deployed to Heroku and hosted via AWS.
+
+## Website Design Goals
+
+#### LO1 Design, develop and implement a full stack web application, with a relational database, using the Django/Python Full Stack MVC framework and related contemporary technologies
+
+-   (1.1) Design a full stack web application to be built using the Django framework and to incorporate a relational database and multiple apps (an app for each potentially reusable component)
+-   (1.2) Design a front end for a full stack web application that meets accessibility guidelines, follows the principles of UX design, meets its given purpose and provide a set of user interactions
+-   (1.3) Develop and implement a full stack web application built using the Django framework, to incorporate a relational database, an interactive front end and multiple apps (an app for each potentially reusable component)
+-   1.4 Implement at least one form, with validation, that allows users to create and edit models in the backend
+-   1.5 Build a Django file structure that is consistent and logical, following the Django conventions
+-   1.6 Write code that clearly demonstrates characteristics of ‘clean code’
+-   1.7 Define application URLs in a consistent manner
+-   1.8 Incorporate a main navigation menu and structured layout
+-   1.9 Demonstrate proficiency in the Python language by including sufficient custom logic in your project
+-   1.10 Write Python code that includes functions with compound statements such as if conditions and/or loops
+-   1.11 Design and implement manual, and automated test procedures to assess functionality, usability, responsiveness and data management within the full web application
+
+#### LO2 Design and implement a relational data model, application features and business logic to manage, query and manipulate relational data to meet given needs in a particular real-world domain
+
+-   (2.1) Design a relational database schema with clear relationships between entities
+-   (2.2) Create at least TWO original custom Django models
+-   (2.3) Create at least one form with validation that will allow users to create records in the database (in addition to the authentication mechanism)
+-   (2.4) All CRUD (create, select/read, update, delete) functionality is implemented
 
 ## User Experience (UX)
 
@@ -12,43 +37,43 @@ This is a website for LastLife, a second hand video game and electronics store, 
 
     -   #### Viewing and Navigation
 
-        1. As a Shopper, I want to easily understand the main purpose of the site and learn more about the business.
-        2. As a Shopper, I want to be able to view a list of products and select some to purchase.
-        3. As a Shopper, I want to view individual product details so I can identify the appearance, condition, price, description and location.
-        4. As a Shopper, I want to quickly identify deals, clearance items and special offers so I can take advantage of special savings on items I'd like to purchase.
-        5. As a Shopper, I want to easily view the total of my purchases at any time so I can svoid spending too much or make a mispurchase.
+        1. As a User, I want to easily understand the main purpose of the site and learn more about the business.
+        2. As a User, I want to be able to view a list of products and select some to purchase.
+        3. As a User, I want to view individual product details so I can identify the appearance, condition, price, description and location.
+        4. As a User, I want to quickly identify deals, clearance items and special offers so I can take advantage of special savings on items I'd like to purchase.
+        5. As a User, I want to easily view the total of my purchases at any time so I can svoid spending too much or make a mispurchase.
 
     -   #### Registration and User Accounts
 
-        1. As a Site User, I want to register for an account so I can have a personal account and be able to view my user profile.
-        2. As a Site User, I want to login or logout so I can access my personal account information.
-        3. As a Site User, I want an option to recover password in case I forget it so I can regain access to my account.
-        4. As a Site User, I want to recieve an email confirmation after registering so I can verify that my account registration was successful
-        5. As a Site User, I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my payment information.
+        1. As a User, I want to register for an account so I can have a personal account and be able to view my user profile.
+        2. As a User, I want to login or logout so I can access my personal account information.
+        3. As a User, I want an option to recover password in case I forget it so I can regain access to my account.
+        4. As a User, I want to recieve an email confirmation after registering so I can verify that my account registration was successful
+        5. As a User, I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my payment information.
 
     -   #### Sorting and Searching
 
-        1. As a Shopper, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items available.
-        2. As a Shopper, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that   category by name.
-        3. As a Shopper, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as       "genres" or "accessories".
-        4. As a Shopper, I want to search a product by name or description so I can find a specific product I would like to purchase.
-        5. As a Shopper, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available or not.
+        1. As a User, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items available.
+        2. As a User, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that   category by name.
+        3. As a User, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as       "genres" or "accessories".
+        4. As a User, I want to search a product by name or description so I can find a specific product I would like to purchase.
+        5. As a User, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available or not.
 
     -   #### Purchasing and Checkout
 
-        1. As a Shopper, I want to easily select the quantity of a product, if applicable, so I can ensure I dont accidentally select the wrong product or quantity of products.
-        2. As a Shopper, I want to view the items in my cart to be purchased so I can identify the total cost of my purchase and all items I will recieve.
-        3. As a Shopper, I want to adjust the quantity of individual items in cart if applicable so I can make changes before checkout.
-        4. As a Shopper, I want to easily enter my payment information so I can check out quickly with no hassle.
-        5. As a Shopper, I want to feel my personal information is safe and secure so I can confidently provide the necessary information required to make a purchase.
-        6. As a Shopper, I want to view an order confirmation before checkout so I can verify that I have not made any mistakes.
-        7. As a Shopper, I want to recieve an email confirmation after checkout so I can keep the confirmation of what I purchased for personal records.
+        1. As a User, I want to easily select the quantity of a product, if applicable, so I can ensure I dont accidentally select the wrong product or quantity of products.
+        2. As a User, I want to view the items in my cart to be purchased so I can identify the total cost of my purchase and all items I will recieve.
+        3. As a User, I want to adjust the quantity of individual items in cart if applicable so I can make changes before checkout.
+        4. As a User, I want to easily enter my payment information so I can check out quickly with no hassle.
+        5. As a User, I want to feel my personal information is safe and secure so I can confidently provide the necessary information required to make a purchase.
+        6. As a User, I want to view an order confirmation before checkout so I can verify that I have not made any mistakes.
+        7. As a User, I want to recieve an email confirmation after checkout so I can keep the confirmation of what I purchased for personal records.
 
     -   #### Administration and Store Management
 
-        1. As a Site Administrator, I want to add a product listing so I can add new products to my store.
-        2. As a Site Administrator, I want to edit or update a product listing so I can change product prices, descriptions, images, and other product information.
-        3. As a Site Administrator, I want to delete a product so I can remove items that are no longer for sale.
+        1. As a User, I want to add a product listing so I can add new products to my store.
+        2. As a User, I want to edit or update a product listing so I can change product prices, descriptions, images, and other product information.
+        3. As a User, I want to delete a product so I can remove items that are no longer for sale.
 
 -   ### Design
     -   #### Colour Scheme
@@ -264,31 +289,31 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Viewing and Navigation
 
-    1. As a Shopper, I want to easily understand the main purpose of the site and learn more about the business.
+    1. As a User, I want to easily understand the main purpose of the site and learn more about the business.
 
         1. 
         2. 
         3. 
 
-    2. As a Shopper, I want to be able to view a list of products and select some to purchase.
+    2. As a User, I want to be able to view a list of products and select some to purchase.
 
         1. 
         2. 
         3. 
 
-    3. As a Shopper, I want to view individual product details so I can identify the appearance, condition, price, description and location.
+    3. As a User, I want to view individual product details so I can identify the appearance, condition, price, description and location.
 
         1. 
         2. 
         3. 
     
-    4. As a Shopper, I want to quickly identify deals, clearance items and special offers so I can take advantage of special savings on items I'd like to purchase.
+    4. As a User, I want to quickly identify deals, clearance items and special offers so I can take advantage of special savings on items I'd like to purchase.
 
         1. .
         2. ...
         3. ...
     
-    5. As a Shopper, I want to easily view the total of my purchases at any time so I can svoid spending too much or make a mispurchase.
+    5. As a User, I want to easily view the total of my purchases at any time so I can svoid spending too much or make a mispurchase.
 
         1. .
         2. ...
@@ -296,31 +321,31 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Registration and User Accounts
     
-    1. As a Site User, I want to login or logout so I can access my personal account information.
+    1. As a User, I want to login or logout so I can access my personal account information.
 
         1. .
         2. ...
         3. ...
     
-    2. As a Site User, I want to login or logout so I can access my personal account information.
+    2. As a User, I want to login or logout so I can access my personal account information.
 
         1. .
         2. ...
         3. ...
     
-    3. As a Site User, I want an option to recover password in case I forget it so I can regain access to my account.
+    3. As a User, I want an option to recover password in case I forget it so I can regain access to my account.
 
         1. .
         2. ...
         3. ...
     
-    4. As a Site User, I want to recieve an email confirmation after registering so I can verify that my account registration was successful
+    4. As a User, I want to recieve an email confirmation after registering so I can verify that my account registration was successful
 
         1. .
         2. ...
         3. ...
     
-    5. As a Site User, I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my payment information.
+    5. As a User, I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my payment information.
 
         1. .
         2. ...
@@ -328,31 +353,31 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Sorting and Searching
 
-    1. As a Shopper, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items available.
+    1. As a User, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items available.
 
         1. .
         2. ...
         3. ...
     
-    2. As a Shopper, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that   category by name.
+    2. As a User, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that   category by name.
 
         1. .
         2. ...
         3. ...
     
-    3. As a Shopper, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as       "genres" or "accessories".
+    3. As a User, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as       "genres" or "accessories".
 
         1. .
         2. ...
         3. ...
     
-    4. As a Shopper, I want to search a product by name or description so I can find a specific product I would like to purchase.
+    4. As a User, I want to search a product by name or description so I can find a specific product I would like to purchase.
 
         1. .
         2. ...
         3. ...
     
-    5. As a Shopper, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available or not.
+    5. As a User, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available or not.
 
         1. .
         2. ...
@@ -360,43 +385,43 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Purchasing and Checkout
 
-    1. As a Shopper, I want to easily select the quantity of a product, if applicable, so I can ensure I dont accidentally select the wrong product or quantity of products.
+    1. As a User, I want to easily select the quantity of a product, if applicable, so I can ensure I dont accidentally select the wrong product or quantity of products.
 
         1. .
         2. ...
         3. ...
 
-    2. As a Shopper, I want to view the items in my cart to be purchased so I can identify the total cost of my purchase and all items I will recieve.
-
-        1. .
-        2. ...
-        3. ...
-    
-    3. As a Shopper, I want to adjust the quantity of individual items in cart if applicable so I can make changes before checkout.
+    2. As a User, I want to view the items in my cart to be purchased so I can identify the total cost of my purchase and all items I will recieve.
 
         1. .
         2. ...
         3. ...
     
-    4. As a Shopper, I want to easily enter my payment information so I can check out quickly with no hassle.
+    3. As a User, I want to adjust the quantity of individual items in cart if applicable so I can make changes before checkout.
 
         1. .
         2. ...
         3. ...
     
-    5. As a Shopper, I want to feel my personal information is safe and secure so I can confidently provide the necessary information required to make a purchase.
+    4. As a User, I want to easily enter my payment information so I can check out quickly with no hassle.
 
         1. .
         2. ...
         3. ...
     
-    6. As a Shopper, I want to view an order confirmation before checkout so I can verify that I have not made any mistakes.
+    5. As a User, I want to feel my personal information is safe and secure so I can confidently provide the necessary information required to make a purchase.
 
         1. .
         2. ...
         3. ...
     
-    7. As a Shopper, I want to recieve an email confirmation after checkout so I can keep the confirmation of what I purchased for personal records.
+    6. As a User, I want to view an order confirmation before checkout so I can verify that I have not made any mistakes.
+
+        1. .
+        2. ...
+        3. ...
+    
+    7. As a User, I want to recieve an email confirmation after checkout so I can keep the confirmation of what I purchased for personal records.
 
         1. .
         2. ...
@@ -404,19 +429,19 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Administration and Store Management
 
-    1. As a Site Administrator, I want to add a product listing so I can add new products to my store.
+    1. As a User, I want to add a product listing so I can add new products to my store.
 
         1. .
         2. ...
         3. ...
 
-    2. As a Site Administrator, I want to edit or update a product listing so I can change product prices, descriptions, images, and other product information.
+    2. As a User, I want to edit or update a product listing so I can change product prices, descriptions, images, and other product information.
 
         1. .
         2. ...
         3. ...
     
-    3. As a Site Administrator, I want to delete a product so I can remove items that are no longer for sale.
+    3. As a User, I want to delete a product so I can remove items that are no longer for sale.
 
         1. .
         2. ...
