@@ -45,12 +45,12 @@ LastLife is a website for a second hand video game store. This store will sell e
 
 #### DO5 Document the development process through a git based version control system and deploy the full application to a cloud hosting platform
 
--   5.1 Deploy the final version of your code to a hosting platform and test that it matches the development version
--   5.2 Ensure that all final deployed code is free of commented out code and has no broken internal links
--   5.3 Ensure the security of the deployed version, making sure to not include any passwords in the git repository, that all secret keys are hidden in environment variables or in files that are in .gitignore, and that DEBUG mode is turned off
--   5.4 Use a git-based version control system for the full application, generating documentation through regular commits and in the project README
--   5.5 Create a project README that is well-structured and written using a consistent markdown format
--   5.6 Document the full deployment procedure, including the database, and the testing procedure, in a README file that also explains the application’s purpose and the value that it provides to its users
+-   (5.1) Deploy the final version of your code to a hosting platform and test that it matches the development version
+-   (5.2) Ensure that all final deployed code is free of commented out code and has no broken internal links
+-   (5.3) Ensure the security of the deployed version, making sure to not include any passwords in the git repository, that all secret keys are hidden in environment variables or in files that are in .gitignore, and that DEBUG mode is turned off
+-   (5.4) Use a git-based version control system for the full application, generating documentation through regular commits and in the project README
+-   (5.5) Create a project README that is well-structured and written using a consistent markdown format
+-   (5.6) Document the full deployment procedure, including the database, and the testing procedure, in a README file that also explains the application’s purpose and the value that it provides to its users
 
 ## User Experience (UX)
 
@@ -98,7 +98,7 @@ LastLife is a website for a second hand video game store. This store will sell e
 
 -   ### Design
     -   #### Colour Scheme
-        -   For this site I have chosen to use a complimantary colour scheme using white and black as the base colors with high contrasting colors, like red and green shades, to draw the users attention to certain actions or events such as clearance sales or new items.
+        -   For this site I have chosen to use a complimantary colour scheme using white and jet black as the base colors with high contrasting colors, like Rosso Corsa red and May green, to draw the users attention to certain actions or events such as clearance sales or new items. Dark orange will be used for decoration, highlights and buttons. Here is a [link to the palette](https://github.com/JMuckian94/MSP4_LastLife/blob/main/wireframes/lastlifepalette.png) created using Coolers.co.
     -   #### Typography
         -   The primary font is Open Sans, a very popular font used by millions of sites, due to its elegant look and its legibillity. San serif will load in its place if there is problems with the browser loading the primary font.
     -   #### Imagery
