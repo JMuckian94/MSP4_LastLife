@@ -70,10 +70,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'lastlifemain.wsgi.application'
 
 
-# Datalastlifemain
-# https://docs.djangoproject.com/en/3.2/ref/settings/#datalastlifemains
+# Databases
+# https://docs.djangoproject.com/en/3.2/ref/settings/#database
 
-DATAlastlifemainS = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': lastlifemain_DIR / 'db.sqlite3',
