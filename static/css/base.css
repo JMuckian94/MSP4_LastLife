@@ -74,6 +74,9 @@ p {
     border: 1px solid black !important;
 }
 
+#home-greeting {
+    background-color: #fff;
+}
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
