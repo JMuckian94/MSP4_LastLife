@@ -9,7 +9,8 @@ body {
     background: url('/media/ben_griffiths_retro_sega_console_unsplash.jpg');
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #333
+    color: #333;
+    padding-top: 8rem;
 }
 
 h1 {
