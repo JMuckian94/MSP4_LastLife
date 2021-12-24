@@ -10,7 +10,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #333;
-    padding-top: 8rem;
+    padding-top: 10rem;
 }
 
 h1 {
