@@ -75,6 +75,16 @@ p {
     border: 1px solid black !important;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 #home-greeting {
     background-color: #fff;
     border-radius: 1rem;
