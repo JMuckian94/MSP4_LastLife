@@ -5,10 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">Games</a>
-                <a href="" class="dropdown-item ">Consoles</a>
-                <a href="" class="dropdown-item ">Retro PCs</a>
-                <a href="" class="dropdown-item">Accessories</a>
+                <a href="" class="dropdown-item">By Price</a>
+                <a href="" class="dropdown-item ">By Rating</a>
+                <a href="" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -18,25 +17,25 @@
                 Games
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="games-link">
-                <a href="" class="dropdown-item">Action</a>
-                <a href="" class="dropdown-item ">Adventure</a>
-                <a href="" class="dropdown-item ">Role-Playing</a>
-                <a href="" class="dropdown-item">Racing</a>
-                <a href="" class="dropdown-item">Sports</a>
-                <a href="" class="dropdown-item">All Games</a>
+                <a href="{% url 'products %}?category=action" class="dropdown-item">Action</a>
+                <a href="{% url 'products %}?category=adventure" class="dropdown-item ">Adventure</a>
+                <a href="{% url 'products %}?category=role_playing" class="dropdown-item ">Role-Playing</a>
+                <a href="{% url 'products %}?category=racing" class="dropdown-item">Racing</a>
+                <a href="{% url 'products %}?category=sports" class="dropdown-item">Sports</a>
+                <a href="{% url 'products %}?category=action,adventure,role-play,racing,sports" class="dropdown-item">All Games</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="consoles-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="platforms_accessories-link"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Consoles
+                Platforms &amp; Accessories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="consoles-link">
-                <a href="" class="dropdown-item">Microsoft</a>
-                <a href="" class="dropdown-item">Sony</a>
-                <a href="" class="dropdown-item">Nintendo</a>
-                <a href="" class="dropdown-item">SEGA</a>
+            <div class="dropdown-menu border-0" aria-labelledby="platforms_accessories-link">
+                <a href="{% url 'products' %}?category=microsoft" class="dropdown-item">Microsoft</a>
+                <a href="{% url 'products' %}?category=sony" class="dropdown-item">Sony</a>
+                <a href="{% url 'products' %}?category=nintendo" class="dropdown-item">Nintendo</a>
+                <a href="{% url 'products' %}?category=sega" class="dropdown-item">SEGA</a>
             </div>
         </li>
 
@@ -45,10 +44,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
