@@ -10,15 +10,15 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
+<div class="container h-100 mt-5">
     <div class="row h-100">
-        <div id="home-greeting" class="col-7 col-md-6 my-auto">
+        <div id="home-greeting" class="col-8 col-md-6 my-auto">
             <h1 class="display-4 logo-font text-black pt-2">
                 Welcome to LastLife! The home of classic video games and hardware!
             </h1>
-            <div class="my-5">
+            <div class="d-flex flex-row-reverse">
                 <h3>
-                    <a href="{% url 'products' %}" class="browse-button btn btn-lg btn-black rounded-0 text-uppercase py-3">Browse Now</a>
+                    <a href="{% url 'products' %}" class="browse-button btn btn-lg btn-black rounded-1 text-uppercase">Browse Now!</a>
                 </h3>
             </div>
         </div>

@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: url('/media/ben_griffiths_retro_sega_console_unsplash.jpg');
     background-size: cover;
-    height: calc(100vh - 10.25px);
+    height: calc(100vh - 11rem);
     color: #333;
 }
 
@@ -115,7 +115,7 @@ p {
 /* padding the top when the navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 8rem;
+        padding-top: 20rem;
     }
 
     body {
