@@ -114,15 +114,20 @@ LastLife is a website for a second hand video game store. This store will sell e
 
 -   ### Database Structure
 
-product_category
-| Name        | Type         |
-|-------------|--------------|
-| id          | INT          |
-| name        | VARCHAR(255) |
-| desc        | TEXT         |
-| created_at  | TIMESTAMP    |
-| modified_at | TIMESTAMP    |
-| deleted_at  | TIMESTAMP    |
+product
+| Name         | Type          |
+|--------------|---------------|
+| id           | INT           |
+| name         | VARCHAR(255)  |
+| desc         | TEXT          |
+| SKU          | VARCHAR(255)  |
+| category_id  | INT           |
+| inventory_id | INT           |
+| price        | DECIMAL(8, 2) |
+| discount_id  | INT           |
+| created_at   | TIMESTAMP     |
+| modified_at  | TIMESTAMP     |
+| deleted_at   | TIMESTAMP     |
 
 product_inventory
 | Name        | Type      |
@@ -144,21 +149,6 @@ discount
 | created_at       | TIMESTAMP     |
 | modified_at      | TIMESTAMP     |
 | deleted_at       | TIMESTAMP     |
-
-product
-| Name         | Type          |
-|--------------|---------------|
-| id           | INT           |
-| name         | VARCHAR(255)  |
-| desc         | TEXT          |
-| SKU          | VARCHAR(255)  |
-| category_id  | INT           |
-| inventory_id | INT           |
-| price        | DECIMAL(8, 2) |
-| discount_id  | INT           |
-| created_at   | TIMESTAMP     |
-| modified_at  | TIMESTAMP     |
-| deleted_at   | TIMESTAMP     |
 
 order_details
 | Name        | Type          |
@@ -266,6 +256,8 @@ adminuser
 | last_login  | TIMESTAMP     |
 | created_at  | TIMESTAMP     |
 | modified_at | TIMESTAMP     |
+
+
 
 
 ## Features
