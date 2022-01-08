@@ -88,6 +88,12 @@ p {
     background-color: #fff;
     border-radius: 1rem;
 }
+
+a.category-badge > span.badge:hover {
+    background: #333 !important;
+    color: #fff !important;
+}
+
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
