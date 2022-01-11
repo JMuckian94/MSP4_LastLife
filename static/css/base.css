@@ -10,6 +10,7 @@ body {
     background-size: cover;
     height: calc(100vh - 11rem);
     color: #333;
+    padding-top: 8rem;
 }
 
 h1 {
@@ -104,6 +105,10 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: pointer;
+}
+
+#card-img {
+    max-height: 16rem;
 }
 
 /* --------------- Media Queries */
