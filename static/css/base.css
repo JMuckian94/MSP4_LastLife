@@ -57,6 +57,19 @@ p {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -85,11 +98,6 @@ p {
 	z-index: -1;
 }
 
-#home-greeting {
-    background-color: #fff;
-    border-radius: 1rem;
-}
-
 a.category-badge > span.badge:hover {
     background: #333 !important;
     color: #fff !important;
@@ -105,6 +113,11 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: pointer;
+}
+
+#home-greeting {
+    background-color: #fff;
+    border-radius: 1rem;
 }
 
 #card-img {
