@@ -14,7 +14,7 @@ class Order(models.Model):
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     country = models.CharField(max_length=40, null=False, blank=False)
     postcode = models.CharField(max_length=20, null=True, blank=True)
-    town_or_city = models.Charfield(max_length=40, null=False, blank=False)
+    town_or_city = models.CharField(max_length=40, null=False, blank=False)
     street_address1 = models.CharField(max_length=80, null=False, blank=False)
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=True)
@@ -55,7 +55,7 @@ class Order(models.Model):
         return self.order_number
 
 
-class = OrderLineItem(models.Model):
+class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(Order, null=False, blank=False, default=0)
