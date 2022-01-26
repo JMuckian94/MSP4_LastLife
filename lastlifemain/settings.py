@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'checkout',
+
+    # Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +61,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'lastlifemain.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap'
 
 TEMPLATES = [
     {
@@ -75,6 +80,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
             ],
+            'builtins': [
+                'crispy_forms,templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
