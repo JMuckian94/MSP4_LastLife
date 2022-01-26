@@ -10,7 +10,8 @@ body {
     background-size: cover;
     height: calc(100vh - 11rem);
     color: #333;
-    padding-top: 8rem;
+    margin-top: 4rem;
+    padding-top: 10rem;
 }
 
 h1 {
@@ -188,7 +189,7 @@ a.category-badge > span.badge:hover {
     border-bottom-color: #343a40 !important;
 }
 
-.bag-notification-wrapper {
+.cart-notification-wrapper {
     height: 6.25rem;
     overflow-x: hidden;
     overflow-y: auto;

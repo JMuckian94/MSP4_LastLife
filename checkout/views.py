@@ -5,11 +5,11 @@ from .forms import OrderForm
 
 
 def checkout(request):
-    bag = request.session.get('cart', {})
+    cart = request.session.get('cart', {})
     if not cart:
         messages.error(request, "Your cart is empty")
         return redirect(reverse('products'))
-    
+
     order_form = OrderForm()
     template = 'checkout/checkout.html'
     context = {
