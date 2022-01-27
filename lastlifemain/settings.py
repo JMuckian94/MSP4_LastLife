@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-import env
 from pathlib import Path
+
+import env
 
 # Build paths inside the project like this: lastlifemain_DIR / 'subdir'.
 lastlifemain_DIR = Path(__file__).resolve().parent.parent
@@ -48,7 +49,8 @@ INSTALLED_APPS = [
     'checkout',
 
     # Other
-    'crispy_forms',
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
 
 MIDDLEWARE = [
@@ -63,7 +65,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'lastlifemain.urls'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 TEMPLATES = [
     {
@@ -177,4 +181,5 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 
+# Configure DEFAULT_AUTO_FIELD for Django 3.2
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'

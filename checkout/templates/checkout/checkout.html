@@ -3,7 +3,7 @@
 {% load cart_tools %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'checkout/css/checkout.css %}">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -44,7 +44,7 @@
                         <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="w-100">
                         {% else %}
                         <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name}}" class="w-100">
-                        {% endif}
+                        {% endif %}
                     </a>
                 </div>
                 <div class="col-7">
@@ -76,17 +76,17 @@
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
-                    {{ order_form.full_name | as_crispy_field }}
-                    {{ order_form.email | as_crispy_field }}
+                    {{ order_form.full_name|crispy }}
+                    {{ order_form.email|crispy }}
                 </fieldset>
                 <fieldset class="rounded px-3 mb-5">
-                    {{ order_form.phone_number | as_crispy_field }}
-                    {{ order_form.country | as_crispy_field }}
-                    {{ order_form.postcode | as_crispy_field }}
-                    {{ order_form.town_or_city | as_crispy_field }}
-                    {{ order_form.street_address1 | as_crispy_field }}
-                    {{ order_form.street_address2 | as_crispy_field }}
-                    {{ order_form.county | as_crispy_field }}
+                    {{ order_form.phone_number|crispy }}
+                    {{ order_form.country|crispy }}
+                    {{ order_form.postcode|crispy }}
+                    {{ order_form.town_or_city|crispy }}
+                    {{ order_form.street_address1|crispy }}
+                    {{ order_form.street_address2|crispy }}
+                    {{ order_form.county|crispy }}
                     <div class="form-check form-check-inline float-right me-0">
                         {% if user.is_authenticated %}
                         <label for="id-save-info" class="form-check-label">Save this delivery information to my user
@@ -96,7 +96,7 @@
                         {% else %}
                         <label class="form-check-label" for="id-save-info">
                             <a href="{% url 'account_signup' %}" class="text-info">Create an account</a> or
-                            <a href="{% url 'account_login %}" class="text-info">login</a> to save this information
+                            <a href="{% url 'account_login' %}" class="text-info">login</a> to save this information
                         </label>
                         {% endif %}
                     </div>
