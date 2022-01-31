@@ -262,7 +262,7 @@ adminuser
 
 ## Features
 
--   Responsive on all device sizes
+-   Responsive on all screen sizes
 
 -   Interactive elements
 
