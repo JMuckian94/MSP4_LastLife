@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Genre
+from .models import Product, Category, Genre, Promotion
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -17,18 +17,29 @@ class ProductAdmin(admin.ModelAdmin):
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'name',
+        'category_options',
     )
 
 
 class GenreAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
         'name',
+        'friendly_name',
+    )
+
+
+class PromotionAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'product',
+        'valid_from',
+        'valid_to',
+        'discount',
+        'active',
     )
 
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Genre, GenreAdmin)
+admin.site.register(Promotion, PromotionAdmin)
