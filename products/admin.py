@@ -17,7 +17,8 @@ class ProductAdmin(admin.ModelAdmin):
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
-        'category_options',
+        'name',
+        'friendly_name',
     )
 
 

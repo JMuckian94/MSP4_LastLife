@@ -4,26 +4,26 @@ from django.contrib.admin.actions import delete_selected
 
 
 class Category(models.Model):
+
     class Meta:
         verbose_name_plural = 'Categories'
 
-    GAMES = 'Games'
-    CONSOLES = 'Consoles'
-    ACCESSORIES = 'Accessories'
-    ALL_PRODUCTS = 'All Products'
-    Category_Range = (
-        (GAMES, 'Games'),
-        (CONSOLES, 'Consoles'),
-        (ACCESSORIES, 'Accessories'),
-        (ALL_PRODUCTS, 'All Products'),
-    )
+    name = models.CharField(max_length=254, null=True, blank=False, default='default')
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
-    category_options = models.CharField(max_length=16, choices=Category_Range, null=True, blank=True)
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
 
 
 class Genre(models.Model):
 
-    name = models.CharField(max_length=254)
+    class Meta:
+        verbose_name_plural = 'Genres'
+
+    name = models.CharField(max_length=254, null=True, blank=False, default='default')
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
