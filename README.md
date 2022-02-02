@@ -6,7 +6,7 @@
 
 ## Project Summary
 
-LastLife is a website for a second hand video game store. This store will sell everything from consoles and accessories to the games themselves and will be equiped with everything to be expected from a modern online store such as account management, payment security and storage, and an intuative shopping cart. The website will be a full stack application, with a relational database, using the Django/Python full stack MVC framework and related contemporary technologies. The data model, application features and business logic will manage, query and manipulate relational data to meet the given needs of this real-world domain. It will present authorisation, authentication and permission features in a full stack web application solution. It will contain an intergrated and custom designed e-commerce payment system, in a cloud-hosted full stack web application. The entire development process will be documented via git version control and the final iterations will be deployed to Heroku and hosted via AWS.
+LastLife is a website for a second hand video game store. This store will sell everything from consoles and accessories to the games themselves and will be equiped with everything to be expected from a modern online store such as account management, payment security, and an intuative shopping cart. The website will be a full stack application using an SQL relational database, the Django/Python full stack MVC framework and related contemporary technologies. The data model, application features and business logic will manage, query and manipulate relational data to meet the given needs of this real-world domain. It will present authorisation, authentication and permission features in a full stack web application solution. It will contain an intergrated Stripe e-commerce payment system, in a cloud-hosted full stack web application. The entire development process will be documented via git version control and the final iterations will be deployed to Heroku and hosted via AWS.
 
 ## Website Design Objectives
 
@@ -61,7 +61,7 @@ LastLife is a website for a second hand video game store. This store will sell e
         1. As a User, I want to easily understand the main purpose of the site and learn more about the business.
         2. As a User, I want to be able to view a list of products and select some to purchase.
         3. As a User, I want to view individual product details so I can identify the appearance, condition, price, description and location.
-        4. As a User, I want to quickly identify deals, clearance items and special offers so I can take advantage of special savings on items I'd like to purchase.
+        4. As a User, I want to quickly identify deals, clearance items and special offers so I can take advantage of special savings on items I'd            like to purchase.
         5. As a User, I want to easily view the total of my purchases at any time so I can svoid spending too much or make a mispurchase.
 
     -   #### Registration and User Accounts
@@ -70,39 +70,40 @@ LastLife is a website for a second hand video game store. This store will sell e
         2. As a User, I want to login or logout so I can access my personal account information.
         3. As a User, I want an option to recover password in case I forget it so I can regain access to my account.
         4. As a User, I want to recieve an email confirmation after registering so I can verify that my account registration was successful
-        5. As a User, I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my payment information.
+        5. As a User, I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my                payment information.
 
     -   #### Sorting and Searching
 
-        1. As a User, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items available.
-        2. As a User, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category, or sort the products in that   category by name.
-        3. As a User, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across broad categories, such as       "genres" or "accessories".
+        1. As a User, I want to sort the list of available products so I can easily identify the best-selling, best-priced, or best-rated items              available.
+        2. As a User, I want to sort a specific category of products so I can find the best-priced or best-rated product in a specific category,              or sort the products in that category by name.
+        3. As a User, I want to sort multiple categories of products simultaneously so I can find the best-priced or best-rated products across              broad categories, such as "genres" or "accessories".
         4. As a User, I want to search a product by name or description so I can find a specific product I would like to purchase.
-        5. As a User, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available or not.
+        5. As a User, I want to see what I've searched for and number of results so I can quickly identify whether the product I want is available            or not.
 
     -   #### Purchasing and Checkout
 
-        1. As a User, I want to easily select the quantity of a product, if applicable, so I can ensure I dont accidentally select the wrong product or quantity of products.
-        2. As a User, I want to view the items in my cart to be purchased so I can identify the total cost of my purchase and all items I will recieve.
+        1. As a User, I want to easily select the quantity of a product, if applicable, so I can ensure I dont accidentally select the wrong                  product or quantity of products.
+        2. As a User, I want to view the items in my cart to be purchased so I can identify the total cost of my purchase and all items I will                recieve.
         3. As a User, I want to adjust the quantity of individual items in cart if applicable so I can make changes before checkout.
         4. As a User, I want to easily enter my payment information so I can check out quickly with no hassle.
-        5. As a User, I want to feel my personal information is safe and secure so I can confidently provide the necessary information required to make a purchase.
+        5. As a User, I want to feel my personal information is safe and secure so I can confidently provide the necessary information required to            make a purchase.
         6. As a User, I want to view an order confirmation before checkout so I can verify that I have not made any mistakes.
-        7. As a User, I want to recieve an email confirmation after checkout so I can keep the confirmation of what I purchased for personal records.
+        7. As a User, I want to recieve an email confirmation after checkout so I can keep the confirmation of what I purchased for personal                  records.
 
     -   #### Administration and Store Management
 
         1. As a User, I want to add a product listing so I can add new products to my store.
-        2. As a User, I want to edit or update a product listing so I can change product prices, descriptions, images, and other product information.
-        3. As a User, I want to delete a product so I can remove items that are no longer for sale.
+        2. As a User, I want to edit or update a product listing so I can change product prices, descriptions, images, and other product                      information.
+        3. As a User, I want delete functionality so I can remove items that are no longer for sale.
 
 -   ### Design
     -   #### Colour Scheme
-        -   For this site I have chosen to use a complimantary colour scheme using white and jet black as the base colors with high contrasting colors, like Rosso Corsa red and May green, to draw the users attention to certain actions or events such as clearance sales or new items. Dark orange will be used for decoration, highlights and buttons. Here is a [link to the palette](https://github.com/JMuckian94/MSP4_LastLife/blob/main/wireframes/lastlifepalette.png) created using Coolers.co.
+        -   For this site I have chosen to use a complimantary colour scheme using white and jet black as the base colors with high contrasting               colors, like Rosso Corsa red and May green, to draw the users attention to certain actions or events such as clearance sales or new               items. Dark orange will be used for decoration, highlights and buttons. 
+        -   Here is a [link to the palette](https://github.com/JMuckian94/MSP4_LastLife/blob/main/wireframes/lastlifepalette.png) created using               Coolers.co.
     -   #### Typography
-        -   The primary font is Open Sans, a very popular font used by millions of sites, due to its elegant look and its legibillity. San serif will load in its place if there is problems with the browser loading the primary font.
+        -   The primary font is Open Sans, a very popular font used by millions of sites, due to its elegant look and its legibillity. San serif               will load in its place if there is problems with the browser loading the primary font.
     -   #### Imagery
-        -   Imagery will be used for two roles on the website. The first set are for decorating the pages, particularly the landing page. These images are relevant to the websites purpose so new users can quickly identify who and what our company is. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+        -   Imagery will be used for two roles on the website. The first set are for decorating the pages, particularly the landing page. These               images are relevant to the websites purpose so new users can quickly identify who and what our company is. The large, background hero             image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
 
 -   ### Wireframes
 
@@ -115,19 +116,15 @@ LastLife is a website for a second hand video game store. This store will sell e
 -   ### Database Structure
 
 product
-| Name         | Type          |
-|--------------|---------------|
+| Name         | Type          | Extra Field  | Extra Field   |
+|--------------|---------------|--------------|---------------|
 | id           | INT           |
-| name         | VARCHAR(255)  |
+| name         | CharField(254)| 
 | desc         | TEXT          |
 | SKU          | VARCHAR(255)  |
-| category_id  | INT           |
-| inventory_id | INT           |
+| category  | INT           |
 | price        | DECIMAL(8, 2) |
 | discount_id  | INT           |
-| created_at   | TIMESTAMP     |
-| modified_at  | TIMESTAMP     |
-| deleted_at   | TIMESTAMP     |
 
 product_inventory
 | Name        | Type      |
@@ -150,17 +147,28 @@ discount
 | modified_at      | TIMESTAMP     |
 | deleted_at       | TIMESTAMP     |
 
-order_details
-| Name        | Type          |
-|-------------|---------------|
-| id          | INT           |
-| user_id     | VARCHAR(255)  |
-| total       | DECIMAL(8, 2) |
-| payment_id  | INT           |
-| created_at  | TIMESTAMP     |
-| modified_at | TIMESTAMP     |
 
-order_items
+| Variable | Type | Field | Field | Field | Field | Field |
+|---|---|---|---|---|---|---|
+| order_number | CharField(32) | null=False | editable=False |  |  |  |
+| user_profile | FOREIGNKEY | 'UserProfile' | on_delete=models.SET_NULL | null=True | blank=True | related_name='orders' |
+| full_name | CharField(50) | null=False | blank=False |  |  |  |
+| email | EmailField(254) | null=False | blank=False |  |  |  |
+| phone_number | CharField(20) | null=False | blank=False |  |  |  |
+| street_address1 | CharField(80) | null=False | blank=False |  |  |  |
+| street_address2 | CharField(80) | null=True |  |  |  |  |
+| postcode | CharField(20) | null=True |  |  |  |  |
+| town_or_city | CharField(40) | null=False | blank=False |  |  |  |
+| county | CharField(80) | null=True |  |  |  |  |
+| country | CountryField() | blank_label='Country *' | null=False | blank=False |  |  |
+| date | DateTimeField | auto_now_add=True |  |  |  |  |
+| delivery_cost | DecimalField(6,2) | null=False | default=0 |  |  |  |
+| order_total | DecimalField(10,2) | null=False | default=0 |  |  |  |
+| grand_total | DecimalField(10,2) | null=False | default=0 |  |  |  |
+| original_cart | TextField | null=False | blank=False | default='' |  |  |
+| stripe_pid | CharField(254) | null=False | blank=False |  |  |  |
+
+order_item
 | Name        | Type      |
 |-------------|-----------|
 | id          | INT       |
