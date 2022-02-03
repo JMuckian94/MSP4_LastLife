@@ -60,7 +60,7 @@
                                         <div class="input_group_prepend">
                                             <button type="button" data-item_id="{{ item.item_id }}"
                                                 id="decrement-qty_{{ item.item_id }}"
-                                                class="decrement-qty btn btn-sm btn-black rounded-0">
+                                                class="decrement-qty btn btn-sm btn-black rounded-1">
                                                 <span>
                                                     <i class="fas fa-minus fa-sm"></i>
                                                 </span>
@@ -72,7 +72,7 @@
                                         <div class="input-group-append">
                                             <button type="button" data-item_id="{{ item.item_id }}"
                                                 id="increment-qty_{{ item.item_id }}"
-                                                class="increment-qty btn btn-sm btn-black rounded-0">
+                                                class="increment-qty btn btn-sm btn-black rounded-1">
                                                 <span>
                                                     <i class="fas fa-plus fa-sm"></i>
                                                 </span>
@@ -105,13 +105,13 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="text-right">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-1 btn-lg">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 <span class="text-uppercase">Continue Shopping</span>
                             </a>
-                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-1 btn-lg">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
@@ -123,7 +123,7 @@
             </div>
             {% else %}
             <p class="lead mb-5">Your cart is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-1 btn-lg">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>

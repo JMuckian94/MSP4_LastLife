@@ -48,3 +48,13 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_user_profile(request, user_id):
+    """ Delete a product from the store """
+
+    profile = get_object_or_404(UserProfile, pk=profile)
+    profile.delete()
+    messages.success(request, 'User Profile deleted!')
+    return redirect(reverse('products'))

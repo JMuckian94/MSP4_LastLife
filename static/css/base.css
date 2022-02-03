@@ -48,26 +48,31 @@ p {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
+}
+
+.btn-green {
+    background: #36964b;
+    color: #fff;
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important;
-    border: 1px solid black;
+    background: #fff;
+    color: #000 !important;
+    border: 1px solid #000;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #000;
     color: white !important;
 }
 
@@ -83,6 +88,18 @@ p {
 
 .text-black {
     color: #000 !important;
+}
+
+.text-green {
+    color: #36964b !important;
+}
+
+.navbar-yellow {
+    background-color: #f58a07;
+}
+
+.bg-danger {
+    background-color: #dc0408 !important;
 }
 
 .border-black {
@@ -127,7 +144,7 @@ input[name='q']::placeholder {
     border-radius: 1rem;
 }
 
-#card-img {
+.card-img-top {
     max-height: 16rem;
 }
 
@@ -154,7 +171,7 @@ input[name='q']::placeholder {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #000;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -316,10 +333,6 @@ input[name='q']::placeholder {
     }
 }
 
-.display-4.logo-font.text-black {
-    font-size: 2rem;
-}
-
 .nav-link {
     padding: 0.15rem;
 }
@@ -329,24 +342,21 @@ input[name='q']::placeholder {
 }
 
 .navbar-toggler {
-    padding: .6rem .6rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    background-color: #fff;
+    color: #000;
 }
+
 
 #delivery-banner h4 {
     font-size: .9rem;
 }
 
-.btn.btn-outline-black.rounded-0,
-.btn.btn-black.rounded-0 {
+.btn.btn-outline-black.rounded-1,
+.btn.btn-black.rounded-1 {
     padding: .375rem .375rem;
 }
 
-.btn.btn-outline-black.rounded-0.btn-lg,
-.btn.btn-black.rounded-0.btn-lg {
-    padding: .375rem .375rem;
-    font-size: .75rem;
-}
 
 .increment-qty, .decrement-qty {
     padding: .25rem .5rem !important;

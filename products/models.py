@@ -1,6 +1,5 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
-from django.contrib.admin.actions import delete_selected
 
 
 class Category(models.Model):
@@ -8,7 +7,7 @@ class Category(models.Model):
     class Meta:
         verbose_name_plural = 'Categories'
 
-    name = models.CharField(max_length=100, null=True, blank=False, default='default')
+    name = models.CharField(max_length=100, null=False, blank=False, default='default')
     friendly_name = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
@@ -23,7 +22,7 @@ class Genre(models.Model):
     class Meta:
         verbose_name_plural = 'Genres'
 
-    name = models.CharField(max_length=100, null=True, blank=False, default='default')
+    name = models.CharField(max_length=100, null=False, blank=False, default='default')
     friendly_name = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
