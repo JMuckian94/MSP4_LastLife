@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, Genre
+from .models import Product, Category, Genre, Promotion
 from .forms import ProductForm
 
 
@@ -15,6 +15,7 @@ def all_products(request):
     query = None
     categories = None
     genres = None
+    promotions = None
     sort = None
     direction = None
 
@@ -29,6 +30,8 @@ def all_products(request):
                 sortkey = 'category__name'
             if sortkey == 'genre':
                 sortkey = 'genre__name'
+            if sortkey == 'promotion':
+                sortkey = 'promotion__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -44,6 +47,11 @@ def all_products(request):
             genres = request.GET['genre'].split(',')
             products = products.filter(genre__name__in=genres)
             genres = Genre.objects.filter(name__in=genres)
+
+        if 'promotion' in request.GET:
+            promotions = request.GET['promotion'].split(',')
+            products = products.filter(promotion__name__in=promotions)
+            promotions = Promotion.objects.filter(name__in=promotions)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -61,6 +69,7 @@ def all_products(request):
         'search-term': query,
         'current_categories': categories,
         'current_genres': genres,
+        'current_promotions': promotions,
         'current_sorting': current_sorting,
     }
 
