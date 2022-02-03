@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Genre
 from .forms import ProductForm
 
 
@@ -14,6 +14,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    genres = None
     sort = None
     direction = None
 
@@ -26,6 +27,8 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
+            if sortkey == 'genre':
+                sortkey = 'genre__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -36,6 +39,11 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
+        if 'genre' in request.GET:
+            genres = request.GET['genre'].split(',')
+            products = products.filter(genre__name__in=genres)
+            genres = Genre.objects.filter(name__in=genres)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -52,6 +60,7 @@ def all_products(request):
         'products': products,
         'search-term': query,
         'current_categories': categories,
+        'current_genres': genres,
         'current_sorting': current_sorting,
     }
 
@@ -76,7 +85,7 @@ def add_product(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, this area is for site owners only.')
         return redirect(reverse('home'))
-    
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():

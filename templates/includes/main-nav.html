@@ -22,12 +22,12 @@
                 <h4>Games</h4>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="games-link">
-                <a href="{% url 'products' %}?category=action" class="dropdown-item">Action</a>
-                <a href="{% url 'products' %}?category=adventure" class="dropdown-item ">Adventure</a>
-                <a href="{% url 'products' %}?category=role_playing" class="dropdown-item ">Role-Playing</a>
-                <a href="{% url 'products' %}?category=racing" class="dropdown-item">Racing</a>
-                <a href="{% url 'products' %}?category=sports" class="dropdown-item">Sports</a>
-                <a href="{% url 'products' %}?category=action,adventure,role-play,racing,sports" class="dropdown-item">All Games</a>
+                <a href="{% url 'products' %}?genre=action" class="dropdown-item">Action</a>
+                <a href="{% url 'products' %}?genre=adventure" class="dropdown-item ">Adventure</a>
+                <a href="{% url 'products' %}?genre=role_playing" class="dropdown-item ">Role-Playing</a>
+                <a href="{% url 'products' %}?genre=racing" class="dropdown-item">Racing</a>
+                <a href="{% url 'products' %}?genre=sports" class="dropdown-item">Sports</a>
+                <a href="{% url 'products' %}?genre=action,adventure,role-play,racing,sports" class="dropdown-item">All Games</a>
             </div>
         </li>
 
@@ -40,8 +40,6 @@
                 <a href="{% url 'products' %}?category=games" class="dropdown-item">Games</a>
                 <a href="{% url 'products' %}?category=consoles" class="dropdown-item">Consoles</a>
                 <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
-                <a href="{% url 'products' %}?category=allproducts" class="dropdown-item">All Products</a>
-
             </div>
         </li>
 
@@ -50,7 +48,7 @@
                 <h4>Promotions</h4>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=promotions" class="dropdown-item">All Promotions</a>
+                <a href="{% url 'products' %}?promotion=promotions" class="dropdown-item">All Promotions</a>
             </div>
         </li>
     </ul>
