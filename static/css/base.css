@@ -104,8 +104,12 @@ footer {
     color: #36964b !important;
 }
 
-.navbar-yellow {
-    background-color: #f58a07;
+.text-danger {
+    color: #dc0408;
+}
+
+.bg-yellow {
+    background-color: #f58a07 !important;
 }
 
 .bg-danger {
