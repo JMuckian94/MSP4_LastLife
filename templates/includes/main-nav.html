@@ -2,12 +2,12 @@
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
             <a class="logo-font font-weight-bold nav-link text-black me-5" href="{% url 'home' %}" id="home-link">
-                Home
+                <h4>Home</h4>
             </a>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black me-5" href="#" id="all-products-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                All Products
+                <h4>All Products</h4>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -19,7 +19,7 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black me-5" href="#" id="games-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Games
+                <h4>Games</h4>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="games-link">
                 <a href="{% url 'products' %}?category=action" class="dropdown-item">Action</a>
@@ -34,7 +34,7 @@
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black me-5" href="#" id="platforms_accessories-link"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Platforms &amp; Accessories
+            <h4>Platforms &amp; Accessories</h4>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="platforms_accessories-link">
                 <a href="{% url 'products' %}?category=games" class="dropdown-item">Games</a>
@@ -47,7 +47,7 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Promotions
+                <h4>Promotions</h4>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=promotions" class="dropdown-item">All Promotions</a>
