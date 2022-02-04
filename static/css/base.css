@@ -7,7 +7,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: url('/media/images/ben_griffiths_retro_sega_console_unsplash.jpg');
+    background: url('/media/ben_griffiths_retro_sega_console_unsplash.jpg');
     background-size: cover;
     height: calc(100vh - 11rem);
     color: #333;
