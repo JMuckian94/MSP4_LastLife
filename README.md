@@ -202,6 +202,12 @@ Category
 -   Toast messages
 -   Attractive storefront
 
+### **Features to be implemented**
+* Greater customisation of the user profile and ability for users to delete their account without admit support.
+* The ability to contact the administrators or site owners if there is any issues. Currently there is no forms for getting in touch.
+* Getting promotions to work as intended and to be applied to multiple products at a time instead of individually.=
+* Improve performance by using responsive images and minifying css files.
+
 ## Technologies Used
 
 ### Languages Used
